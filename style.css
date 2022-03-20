@@ -23,6 +23,14 @@ html {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
     font-size: 16px;
 }
+
+a{
+    color: green;
+}
+
+h1, h2, h3{
+    color: green;
+}
 /** RESPONSIVE IMAGES */
 figure,
 img {
@@ -45,16 +53,40 @@ figcaption {
 /** BASE CLASSES */
 /** Container styles to keep content from becoming too wide or coming too close to
 * mobile edge */
+
 .container {
     width    : 100%;
     max-width: 800px;
     padding  : 10px;
     margin   : 0 auto;
 }
+
+.container .filter {
+    color: green;
+}
+
+.item {
+    display: none;
+    text-decoration-color: green;
+}
+
+.item.active {
+    display: block;
+}
+
+#place {
+    text-align: center;
+    color: green;
+}
+
 /** Images are allowed to be a little wider when broken out into their own container */
 .container.image {
     max-width: 1200px;
     padding  : 0;
+    background-color: green;
+    text-decoration-color: white;
+    font-size: 14px;
+    color: white;
 }
 
 .container.image .caption,
